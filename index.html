@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+      
+    <title>FREET - friends' meet</title>
+</head>
+<body>
+    <h1 id="title">FREET - friends' meet</h1>
+    <div>
+    <span class="container">
+        <video autoplay="true" class="videoElement" >
+        </video>
+        
+    </span>
+    <span class="container">
+        <video autoplay="true" class="videoElement" >
+        </video>
+        
+    </span>
+    
+    </div>
+    <div>
+    <span class="container">
+        <video autoplay="true" class="videoElement" >
+        </video>
+        
+    </span>
+    <span class="container">
+        <video autoplay="true" class="videoElement" >
+        </video>
+        
+    </span>
+    
+    </div>
+    <script>
+        var video = document.querySelector(".videoElement");
+    
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+          console.log("Something went wrong!");
+        });
+    }
+    </script>
+</body>
+
+</html>

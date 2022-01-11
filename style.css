@@ -1,0 +1,21 @@
+*{
+    background-color:#161C21;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+
+div{
+    text-align: center;
+}
+.videoElement {
+    margin: 5px;
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+    border-radius: 25px;
+    border: 10px #DF3450 solid;
+    display: inline-block;
+}
+#title{
+    color: #98A3F3;
+    text-align: center;
+}
